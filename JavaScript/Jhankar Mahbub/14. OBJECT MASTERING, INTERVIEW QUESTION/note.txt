@@ -1,0 +1,83 @@
+Bind, Call, Apply
+
+this, new
+
+timezone
+
+
+---------------------------------------------
+
+Bind : borrow kora
+
+judi kno ekta object er method ami onno object e apply korte chai tahole ami 
+
+bind/call/apply use korte pari.
+
+
+
+Window
+
+
+joto jinish window er vitor ase toto jinish gula ke window dot diye access kora lage na.
+
+directly access korte pari.
+
+
+Window : Javascript er execution. Overall javascript er joto kisu hoy sob er vitore hoy. window hosse global scope. (khetro)
+
+
+
+//setTimeout : hat er kaj sob sesh kore setTimeout execute hobe. 
+
+
+
+ setTimeout(() => {
+     console.log("See you later")
+ }, 4000);
+
+3second or tar o pore. 3 second er age execution hobe na. hater kaj sesh korte judi 1  hour lage then 1 hour pore giye setTimeout execute hobe.
+
+
+
+setInterval(function () {
+    console.log('doing it')
+    
+}, 3000);
+
+
+setInterval : particular time por por execute hobe.
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+go to Google and search 'javascript event loop'
+go to youtube and search 'What the heck is the event loop anyway?'
+
+go to mdn and read 'Concurrency model and the event loop - javascript | MDN' 
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+Go to MDN and  read Javascript Date Time
+
+
+go to console and type
+
+1. new Date()
+
+2.
+ const start  = new Date();
+
+let sum =0;
+
+for(let i =0; i< 10000000000;i++)
+{
+    sum++;   
+}
+
+const end = new Date();
+
+console.log('time elapsed', end - start);

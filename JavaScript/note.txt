@@ -1,0 +1,34 @@
+JavaScript Extension
+
+1. Spell Checker
+
+2. JavaScript (ES6) Code snippets
+
+3. ESLint
+
+4. HTML Snippets
+
+5. Prettier
+
+
+
+--------------------
+
+React Extension
+
+React Extesnion Pack
+
+Auto Import
+
+Emmet in vs code
+
+------------
+
+
+search google 'fake json data'
+
+1. Mockaroo
+
+2. JSON Generator
+
+3. Mocki (api generator)

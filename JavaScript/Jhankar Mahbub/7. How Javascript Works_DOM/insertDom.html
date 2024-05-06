@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Explore DOM</title>
+
+		<style>
+			article {
+				border: 2px solid tomato;
+				border-bottom: 20px;
+				margin: 5px;
+				padding: 5px;
+			}
+
+			.special h3 {
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section>
+				<h3>Exploring DOM</h3>
+
+				<article id="first-article">
+					<h3>article-1</h3>
+
+					<p class="author">author-1</p>
+					<p class="description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+						expedita?
+					</p>
+				</article>
+
+				<article class="special">
+					<h3>article-2</h3>
+
+					<p class="author">author-2</p>
+					<p class="description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+						expedita?
+					</p>
+				</article>
+
+				<article class="special">
+					<h3>article-3</h3>
+
+					<p class="author">author-3</p>
+					<p class="description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+						expedita?
+					</p>
+				</article>
+
+				<article>
+					<h3>Grocery List</h3>
+
+					<ul id="gift-list">
+						<li>gift item -1</li>
+						<li>gift item -2</li>
+						<li>gift item -3</li>
+						<li>gift item -4</li>
+						<li>gift item -5</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+
+		<script>
+			const article = document.getElementById("first-article");
+
+			const newParagraph = document.createElement("p");
+			newParagraph.innerHTML = "This is added by JavaScript";
+
+			article.appendChild(newParagraph);
+
+			//add one more gift item
+
+			const ul = document.getElementById("gift-list");
+
+			const li = document.createElement("li");
+
+			li.innerHTML = "Brand new Gift";
+
+			ul.appendChild(li);
+
+			//write this in console
+
+			// document.getElementById("gift-list").childNodes;
+
+			// document.getElementById("gift-list").parentNode;
+		</script>
+	</body>
+</html>

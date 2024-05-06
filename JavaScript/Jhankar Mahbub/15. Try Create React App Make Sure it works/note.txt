@@ -1,0 +1,8 @@
+go to google and search 'rest coutries'
+
+https://restcountries.com/v3.1/all
+
+
+use this api.
+
+ey api diye country name r capital city r list div e show korbe. then particular country te click korle details show korbe.

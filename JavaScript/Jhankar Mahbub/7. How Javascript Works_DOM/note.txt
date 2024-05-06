@@ -1,0 +1,12 @@
+write in the console
+
+document.getElementsByTagName('p');
+
+will return HTML collection
+
+----------------
+
+
+google e 'html dom' likhe search koro.
+
+
