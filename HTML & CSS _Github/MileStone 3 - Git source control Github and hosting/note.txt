@@ -1,0 +1,158 @@
+1.  install git, create Github repository.
+
+    i. go to 'git-scm.com' amd download git and install it.
+
+    ii. now, check if git is successfully installed of not. 
+
+        open cmd and type 'git --version'
+
+        if git is successfully installed, then it will show something like this in cmd.
+
+        'git version 2.30.0.windows.1'
+
+
+    iii. Open and account in Github. (github.com)
+
+        (Provide your username, email, password and verify your account)
+
+    iv. Now, create a repository in Github.
+
+    v. Now you can see '...or create a new repository on the command line'. Copy the 6 line of code and paste it to your vs code command line.
+     
+
+--------------------------------------------------------------------------
+
+2. Git init, git add, git commit, set origin
+
+   i. Create a 'index.html' file and write some code.
+   ii. Now, send this code to github by writing following these code to your vs code command line.
+
+        ➡️ git init 
+        ➡️ git add . (add everything/file)
+        ➡️ git commit -m 'first commit' 
+        ➡️ git brach -M main
+         (optional, by default it's master branch. branch is like  a road. which road you wanna push)
+
+        ➡️git remote add origin https://github.com/........
+        ➡️git push -u origin main
+         (if you want to push in main branch write main. It's like sending letter to post office.)
+
+
+--------------------------------------------------------------------------
+
+3. Git push, git pull
+
+   ➡️Git push
+
+        i.   go to index.html file again and add a extra line.
+        ii.  you can see the all the changes on the left side of vs code called   'source control'. (previous commit r sathe new changes gula dekhabe).[ektu por por code commit kore rakha uchit. tahole kono code na kaj korle khub easily caile discard kore deua jay. code track kora jay left side e giye 'source control' theke]
+
+        iii. git .
+        iv.  git commit -m 'second commit'
+        v.   git push 
+
+   ➡️ git pull
+
+      Same branch e 2/aro besi developer ek y branch e kaj korle, latest code ta anar jonno 'git pull' command use korte hoy. 
+
+      or kokhono push korte giye error khele, git pull diye latest code namiye niye then push korte hobe. 
+
+--------------------------------------------------------------------------
+
+4. Host simple website in Github using gh-pages
+
+   i. Go to your repository.
+   ii. Go to settings.
+   iii. Find Github pages in this page.
+      
+        ➡️ Find Source under Github pages section.
+        ➡️ Select your branch then click save.
+        ➡️ Now, again scroll down to Github Pages section and find your hosted url.
+        ➡️ If you change/add something in your source code, then again do the same thing. (add, commit, push. make sure push to the same branch where the url is hosted).  
+
+
+--------------------------------------------------------------------------
+
+5. Git Branch
+
+   ekjon peyaj katbe, ekjon chal clean korbe. sobay seperate branch e korbe. pore sobar ta developer branch e merge hobe. then finally pore seta main merge e jabe .
+   
+
+
+   i. go to google. search 'git branch command'. (https://github.com/joshnh/Git-Commands)
+
+   Command       	                  Description
+    git branch   	         List branches (the asterisk denotes the current branch)
+    git branch -a       	List all branches (local and remote)
+    git branch [branch name]	Create a new branch
+    git branch -d [branch name]	Delete a branch
+    git push origin --delete [branch name]	Delete a remote branch
+    git checkout -b [branch name]	Create a new branch and switch to it
+    git checkout -b [branch name] origin/[branch name]	Clone a remote branch and switch to it
+    git branch -m [old branch name] [new branch name]	Rename a local branch
+    git checkout [branch name]	Switch to a branch
+    git checkout -	Switch to the branch last checked out
+    git checkout -- [file-name.txt]	Discard changes to a file
+    git merge [branch name]	Merge a branch into the active branch
+    git merge [source branch] [target branch]	Merge a branch into a target branch
+    git stash	Stash changes in a dirty working directory
+    git stash clear	Remove all stashed entries
+
+           
+
+   
+   
+--------------------------------------------------------------------------
+
+6. Create git branch, merge branches
+
+ ➡️ creating a branch 'git branch my-first-branch'
+
+ ➡️ git branch (list of all branches)
+
+ ➡️ git checkout -b my-second-branch (branch create kore oi branch e cole jabe)
+
+ ➡️ now, git add, commit, push
+
+ ➡️ git push --set-upstream origin my-second-branch.
+ 
+  (1st time for the user created local branch)
+
+ ➡️ now you can see the created branch in your repository.
+
+ summary: here we firstly created local branch then sending it to github. this way later it'll create remote branch.
+
+➡️ you can also add your source code now, this time you just need (add, commit, push).
+
+
+-------------------------------Merging---------------------------------
+
+Main branch er sathe merge korte caile age Main branch e cole jau. 
+
+Then onno branch r code r sathe merge koro.
+
+➡️ git branch (dekhe nilam ki ki branch ase)
+
+➡️ git checkout main (main branch e ashlam)
+
+➡️ git merge my-second-branch (my-second-branch er code gula main branch er sathe merge holo)
+
+➡️ git push (jehetu agey add, commit koresilam oi branch e)
+
+
+
+-----------------------------------------------------------
+
+6. Common github related issues forced by new developer.
+
+➡️ onno developer bollo tar branch e checkout korte. ami 'git checkout ... ' korlam.
+unar branch pabo na. karon remote e ase oi branch. local e nay. tay kaj suru korar age 
+git pull korte hobe. 
+
+
+
+      
+        
+
+
+

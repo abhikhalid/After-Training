@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			h1::before {
+				content: "Hello ";
+				color: burlywood;
+				font-size: 18px;
+				background-color: cornflowerblue;
+			}
+
+			.special-effect::after {
+				content: " Bye";
+				font-size: 15px;
+				background-color: red;
+			}
+
+			/* CSS counter */
+
+			body {
+				counter-reset: section;
+			}
+
+			p::before {
+				counter-increment: section;
+				content: "Girl-Friend No " counter(section) " : ";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Pseudo Class</h1>
+		<h1 class="special-effect">Normal Class</h1>
+		<h1 class="special-effect">Vodro Class</h1>
+
+		<input type="text" name="email" />
+		<br />
+		<input type="text" name="password" />
+
+		<br />
+
+		<a href="https://www.google.com">Google</a>
+		<a href="https://www.youtube.com">Youtube</a>
+
+		<p>Alia</p>
+		<p>Dalia</p>
+		<p>Malia</p>
+		<p>Salia</p>
+		<p>Jalia</p>
+		<p>Kalia</p>
+		<p>Falia</p>
+		<p>Nalia</p>
+	</body>
+</html>

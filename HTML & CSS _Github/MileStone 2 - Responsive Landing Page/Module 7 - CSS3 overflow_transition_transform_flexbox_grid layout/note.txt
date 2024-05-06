@@ -1,0 +1,11 @@
+https://flexboxfroggy.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://www.viget.com/articles/getting-started-with-css-grid-part-1/
+
+https://flukeout.github.io/
+
+https://www.mockplus.com/blog/post/css-animation-examples
+
+
+Google 'css fun animation'
